@@ -1,0 +1,31 @@
+@use "./vars" as c;
+
+.section {
+    padding: 7rem 0;
+    letter-spacing: 0.3rem;
+}
+
+.section-hr {
+    margin-bottom: 5rem;
+}
+
+.even {
+    background: linear-gradient(c.$c4,c.$c5);
+    color: c.$c1;
+    
+    hr {
+        background-image: linear-gradient(to right,transparent,c.$c1,transparent);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

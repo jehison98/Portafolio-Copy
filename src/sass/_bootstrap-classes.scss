@@ -1,0 +1,21 @@
+@use "./vars" as c;
+
+.modal {
+    padding-right: 0px !important;
+}
+
+.tooltip {
+    font-size: 1.5rem;
+}
+
+.tooltip.show {
+    opacity: 0.9;
+}
+
+.tooltip-inner {
+    background: c.$c2;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+    border-top-color: c.$c2;
+}

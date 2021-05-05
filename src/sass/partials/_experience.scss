@@ -1,0 +1,22 @@
+@use "../vars" as c;
+
+#experience {
+
+    img {
+        width: 15rem;
+        background-color: c.$c4;
+        padding: .5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: border-radius .3s ease;
+
+        &:hover {
+            border-radius: 0;
+        }
+    }
+
+    h5 {
+        display: none;
+    }
+
+}

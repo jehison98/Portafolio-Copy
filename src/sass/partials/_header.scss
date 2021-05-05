@@ -1,0 +1,59 @@
+@use "../vars" as c;
+
+#header {
+    padding: 10rem 0 5rem;
+    background: linear-gradient(c.$c2, c.$c3);
+    color: c.$c1;
+
+    .row {
+        display: block;
+    }
+
+    #name {
+        height: 5rem;
+    }
+    
+    h1 {
+        font-size: 0rem;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    
+        span {
+            font-size: 2rem;
+        }
+
+        .com, .jehison {
+            transition: font-size .5s ease,color 1.5s;
+        }
+
+        .transparent {
+            color: transparent;
+            font-size: 0rem;
+        }
+
+    
+    }
+
+    .lead {
+        opacity: 0;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: .3rem;
+        transition: all 3s ease;
+    }
+
+
+}
+
+#svg-intro {
+    width: 300px;
+    max-width: 50%;
+    overflow: visible;
+}
+

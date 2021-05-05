@@ -1,0 +1,8 @@
+@use "../vars" as c;
+
+#footer {
+    background: linear-gradient(c.$c2,c.$c3);
+    padding: 3rem 0;
+    color: c.$c1;
+    font-size: 1.5rem;
+}

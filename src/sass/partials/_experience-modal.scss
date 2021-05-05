@@ -1,0 +1,52 @@
+@use "../vars" as c;
+
+#experience-modal.modal-section {
+    .modal-content {
+        background-color: c.$c1;
+        .modal-head {
+            background-color: c.$c6;
+            color: c.$c1;
+            & > h1 {
+                margin-bottom: 0;
+            }
+            & > p {
+                margin-top: 1.5rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .resumen-body {
+            text-align: left;
+            h3 {
+                background-color: c.$c4;
+                color: c.$c1;
+                padding: 1%;
+                font-size: 1.3rem;
+            }
+            article {
+                padding: 0 7%;
+                h4 {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }
+
+                .circle-list {
+                    list-style-type: circle;
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        margin: 0.5rem auto;
+                    }
+                }
+
+                cite {
+                    display: block;
+                    margin-bottom: 1rem;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!-- Contact -->
+<section class="even section" id="contact">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <h2>CONTACT</h2>
+                <hr class="section-hr">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 col-offset-1">
+                <form id="contact-form" class="text-left" role="form">
+
+                    <div id="form-name" class="form-group">
+                        <label for="form-name">Name</label>
+                        <div class="form-input">
+                            <input type="text" class="form-control" placeholder="Name" name="name">
+                            <i class="fas"></i>
+                        </div>
+                        <p class="form-message">Invalid name! Please introduce a valid name</p>
+                    </div>
+                    <hr>
+
+                    <div id="form-email" class="form-group">
+                        <label for="form-email">Email</label>
+                        <div class="form-input">
+                            <input type="email" class="form-control" placeholder="Email" name="email">
+                            <i class="fas"></i>
+                        </div>
+                        <p class="form-message">Invalid email! Please introduce a valid email</p>
+                    </div>
+                    <hr>
+
+                    <div id="form-phone" class="form-group">
+                        <label for="form-phone">Phone</label>
+                        <div class="form-input">
+                            <input type="tel" class="form-control" placeholder="Phone" name="phone">
+                            <i class="fas"></i>
+                        </div>
+                        <p class="form-message">Invalid phone! Please introduce a valid phone</p>
+                    </div>
+                    <hr>
+
+                    <div id="form-message" class="form-group">
+                        <label for="form-message">Message</label>
+                        <div class="form-input">
+                            <textarea rows="1" class="form-control" placeholder="Message" name="message"></textarea>
+                            <i class="fas"></i>
+                        </div>
+                        <p class="form-message">Invalid Message! Please try again</p>
+                    </div>
+                    <hr>
+
+                    <div id="form-captcha" class="form-group">
+                        <label id="captcha-gen" for="form-captcha">74 + 104</label>
+                        <div class="form-input">
+                            <input id="captcha-sum" type="text" class="form-control" name="captcha">
+                            <i class="fas"></i>
+                        </div>
+                        <p class="form-message">Invalid answer! Please try again</p>
+                    </div>
+                    <hr>
+
+                    <div class="form-group text-center">
+                        <button id="send-btn" type="submit" class="btn btn-warning btn-lg"
+                            data-toggle="modal">Send</button>
+                        <br>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal Success Message -->
+    <div class="modal-section" id="successMessage-modal">
+        <div class="modal fade" id="send-message" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-head text-center">
+                        <h5 class="modal-title">Sending Message...</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="./public/img/extra-resources/pacman.gif" alt="pacman.gif">
+                    </div>
+
+                    <div class="modal-footer"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media content -->
+    <div class="social-media">
+        <a href="#"><img id="linkedin" src="./public/img/social-media/linkedin.png" alt="linkedin image"></a>
+        &nbsp;
+        <a href="#"><img id="github" src="./public/img/social-media/github.png" alt="github image"></a>
+        &nbsp;
+        <a href="#"><img id="facebook" src="./public/img/social-media/linkedin.png" alt="linkedin image"></a>
+        &nbsp;
+    </div>
+
+</section>

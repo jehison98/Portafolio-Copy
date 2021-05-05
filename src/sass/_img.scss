@@ -1,0 +1,13 @@
+.image-container {
+    padding: 1rem;
+
+    .image-responsive {
+        height: auto;
+        max-width: 100%;
+    }
+
+    img {
+        border-radius: 2rem;
+    }
+
+}

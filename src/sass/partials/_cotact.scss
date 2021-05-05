@@ -1,0 +1,130 @@
+@use "../vars" as c;
+
+#contact {
+
+    .col-offset-1 {
+        margin-left: 8.33%;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+
+        label {
+            font-size: 1.4rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .form-control {
+            padding-right: 42.5px;
+            font-size: 1.5rem;
+            color: c.$c2;
+            border: 0;
+            background-color: transparent;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
+        .form-input {
+            position: relative;
+
+            .fa-times-circle, .fa-check-circle {
+                position: absolute;
+                top: 30%;
+                right: 1%;
+                font-size: 1.2rem;
+            }
+
+            input, textarea {
+                background-color: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            & > textarea {
+                height: 100px;
+            }
+        }
+
+        .form-message {
+            display: none;
+            margin-top: 0.8rem;
+            font-size: 1.2rem;
+            color: c.$cWarning;
+        }
+
+        .active-message {
+            display: block;
+        }
+
+        .wrong-input {
+            color: c.$cWarning;
+            border: 2px solid c.$cWarning;
+        }
+        .success-input {
+            color: c.$cSuccess;
+        }
+
+    }
+
+    #send-btn {
+        background-color: c.$cbtn;
+        color: c.$c1;
+        border: 1px solid c.$cbtn;
+        margin: 3rem auto;
+    }
+
+    .btn-lg {
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.33333;
+        border-radius: 6px;
+    }
+
+    button:disabled,
+    button[disabled]{
+        cursor: not-allowed;
+    }
+
+    .social-media {
+
+        img {
+            border-radius: 10rem;
+            background-color: c.$c1;
+        }
+    }
+
+    .modal-section {
+        .modal-content {
+            color: c.$c2;
+            background-color: c.$c1;
+            transition: background-color 1s ease, color 1s ease;     
+            .modal-head{
+                & > h5 {
+                    font-size: 2rem;
+                    margin: 2rem auto 1rem auto;
+                }
+            }
+            .modal-body {
+                & > p {
+                    font-size: 1.2rem;
+                }
+            }
+            .modal-footer {
+                & > button {
+                    margin: 0rem auto;
+                    color: c.$c1;
+                    background-color: c.$cbtn;
+                }
+            }
+        }
+        .success-sent-message {
+            background-color: #00ab66;
+            color: c.$c1;   
+        }
+        .wrong-sent-message {
+            background-color: #ed4337;
+            color: c.$c1;   
+        }
+    }
+
+}

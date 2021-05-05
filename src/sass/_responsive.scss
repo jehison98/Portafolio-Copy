@@ -1,0 +1,67 @@
+@media(min-width: 992px) {
+    #portafolio {
+        .btn-portafolio {
+            h4 {
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+
+    #header {
+        .lead {
+            font-size: 21px;
+        }
+    }
+
+    .navbar {
+        padding: 0.1rem 1rem;
+    }
+
+    .navbar-custom {
+        .navbar-collapse {
+            margin-right: 0;
+            margin-left: 0;
+            border-top: none;
+            box-shadow: none;
+        }
+    }
+
+    .navbar-nav {
+        margin: 0rem 0rem !important;
+        .nav-item {
+            padding: 1rem 1.5rem !important;
+        }
+    }
+
+    #portafolio {
+        .btn-portafolio {
+            h4 {
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+@media(min-width: 461px) {
+    html {
+        font-size: 14px;
+    }
+    #skillset {
+        img{
+            width: 8rem;
+            max-width: 100%;
+        }
+    }
+
+    #experience {
+        h5 {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

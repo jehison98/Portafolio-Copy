@@ -1,0 +1,100 @@
+@use "../vars" as c;
+
+.modal-section {
+
+    .modal-content {
+        background-color: c.$c1;
+    }
+
+    .modal-head {
+        padding: 3% 3% 1%;
+
+        .btn-close {
+            padding: 0;
+            width: 30px;
+            cursor: pointer;
+            background: 0 0;
+            border: 0;
+        }
+
+        & > h1 {
+            margin-top: 5rem;
+            margin-bottom: 1.5rem;
+            line-height: 3rem;
+        }
+
+        .btn-device, .btn-close {
+            transform-origin: 50% 50%;
+            opacity: .75;
+            transition: opacity .3s ease,transform .3s ease;
+
+            &:hover {
+                opacity: 1;
+                transform: rotate(360deg) scale(1.2);
+                
+            }
+        }
+    
+        .btn-device {
+            width: 40px;
+            height: 50px;
+            background-color: c.$c1;
+            border-radius: 50%;
+            padding: 0;
+            background-color: transparent;
+        }
+    
+        .portafolio-img-wrapper {
+            overflow: hidden;
+            position: relative;
+
+            & > img {
+                width: 100%;
+            }
+
+            .arrow {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 35%;
+                background-color: c.$cbtn;
+                box-shadow: 0 0 0 c.$c1;
+                width: 50px;
+                height: 80px;
+                opacity: 0.5;
+                cursor: pointer;
+                transition: opacity 0.3s ease;
+                & > img {
+                    width: 30px;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .arrow-left {
+                left: 0%;
+                border-radius: 0px 30px 30px 0px;
+                border-top: 5px solid c.$c1;
+                border-bottom: 5px solid c.$c1;
+                border-right: 5px solid c.$c1;
+            }
+            .arrow-right {
+                right: 0%;
+                border-radius: 30px 0px 0px 30px;
+                border-top: 5px solid c.$c1;
+                border-bottom: 5px solid c.$c1;
+                border-left: 5px solid c.$c1;
+            }
+
+        }
+
+        & > p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    }
+
+}

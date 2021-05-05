@@ -1,0 +1,95 @@
+@use "../vars" as c;
+
+.navbar-custom {
+    width: 100%;
+    background: linear-gradient(c.$c4,c.$c5);
+    box-shadow: 0 0 10px 1px c.$c6;
+    transition: all 300ms ease;
+
+    .navbar-brand {
+        text-decoration: none;
+        color: c.$c1;
+        padding-right: 0.2rem;
+        transition: all 300ms ease;
+
+        #scrollFade {
+            margin-left: 0.1rem;
+            letter-spacing: 1px;
+            display: none;
+        }
+        .half-size {
+            font-size: 0.8rem;
+        }
+
+
+        .img-circle {
+            border-radius: 50%;
+        }
+
+        &:hover {
+            color: c.$c2;
+        }
+
+    }
+
+    .navbar-nav {
+        margin: 1rem 0rem;
+        .nav-item {
+            font-weight: 400;
+            color: c.$c1;
+            transition: all 300ms ease;
+
+            &:hover {
+                background-color: c.$c1;
+                color: c.$c2;
+            }
+        }
+
+        .active {
+            background-color: rgba($color: c.$c3, $alpha: 0.1);
+
+            &:hover {
+                color: c.$c1;
+                background-color: rgba($color: c.$c3, $alpha: 0.1);
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        margin: 4px 0;
+        transition: all 300ms ease;
+        &:hover {
+            background-color: c.$c2;
+            border-radius: 50px;
+        }
+    }
+
+    .navbar-collapse {
+        overflow-x: hidden;
+        border-top: 1px solid transparent;
+        box-shadow: rgb(255 255 255 / 10%) 0px 1px 0px inset;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: c.$c1;
+        margin: 4px 0;
+    }
+
+
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
