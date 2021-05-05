@@ -17,6 +17,8 @@
     "babel-loader": "^8.2.2",
     "browserslist": "^4.16.6",
     "css-loader": "^5.2.2",
+    "favicons": "^6.2.1",
+    "favicons-webpack-plugin": "^5.0.2",
     "file-loader": "^6.2.0",
     "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.1",

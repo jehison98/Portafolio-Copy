@@ -6,11 +6,12 @@ const inputs = document.querySelectorAll('#contact-form input, #contact-form tex
 const sendBtn = document.getElementById("send-btn");
 
 //Label opacity change to 1 when user write anything
-$('#contact-form input, #contact-form textarea').keypress(function () {
-    $(this).attr("placeholder", "");
-});
-$('#contact-form .form-input').keypress(function () {
-    $(this).prev().css('opacity', '1');
+const allLabels = document.querySelectorAll('#contact-form .form-group label');
+inputs.forEach((element, index) => {
+    element.addEventListener('keyup', () => {
+        allLabels[index].style.opacity = "1";
+        element.setAttribute('placeholder', "");
+    });
 });
 
 /* Regular expresion to allow what the user can write in each input */
@@ -224,7 +225,7 @@ function clearInputs() {
 
 /* Fetch function to send inputs value to the banckend and the backend sent a email */
 function sendValues() {
-    let url = "http://127.0.0.1:5000/";
+    let url = "https://backend-portafolio-jehi.herokuapp.com/";
     let formData = {};
     document.querySelector('body').style.cursor = "progress";
 
@@ -238,7 +239,7 @@ function sendValues() {
         body: JSON.stringify(formData),
         headers: {
             'Content-Type': 'application/json'
-        }
+        },
     })
         .catch(error => errorMessage(error))
         .then(response => successMessage(response));

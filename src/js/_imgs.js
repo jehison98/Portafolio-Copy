@@ -21,6 +21,7 @@ import "../public/img/extra-resources/link-website.svg";
 import "../public/img/extra-resources/arrow-left.png";
 import "../public/img/extra-resources/arrow-right.png";
 import "../public/img/extra-resources/pacman.gif";
+import "../public/img/extra-resources/favicon.png";
 
 /* Skillsets */
 import "../public/img/skillsets/css.svg";

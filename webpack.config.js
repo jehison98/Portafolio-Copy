@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
@@ -32,6 +33,8 @@ module.exports = {
                 ]
             }
         }),
+
+        new FaviconsWebpackPlugin('./src/public/img/extra-resources/favicon.png'),
 
     ],
 
@@ -80,7 +83,7 @@ module.exports = {
                                 let path = file.split("src/")[1];
                                 return path
                             }
-                        }
+                        },
                     },
                     {
                         loader: 'image-webpack-loader',

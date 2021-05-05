@@ -10,5 +10,6 @@ import "./_skillsets";
 import "./_experience";
 import "./_form";
 import "./_footer";
+import "./_domain";
 
 
