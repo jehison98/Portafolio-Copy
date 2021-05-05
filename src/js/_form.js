@@ -226,6 +226,7 @@ function clearInputs() {
 function sendValues() {
     let url = "http://127.0.0.1:5000/";
     let formData = {};
+    document.querySelector('body').style.cursor = "progress";
 
     for (let id in inputsValidation) {
         const theInput = document.querySelector(`#form-${id} .form-input input, #form-${id} .form-input textarea`);
@@ -271,7 +272,7 @@ function successMessage(res) {
 /* Wrong message when a error ocurred */
 function errorMessage(err) {
     console.log("An error ocurred: " + err);
-    h5Message.innerHTML = "Ooops, something went wrong!";
+    h5Message.innerHTML = "Ooops! Something went wrong.";
     bodyMessage.innerHTML = '<p>Please try again later or contact me at: "jehison3098@gmail.com"</p>';
     modalContent.classList.remove('success-sent-message');
     modalContent.classList.add('wrong-sent-message');
@@ -280,6 +281,7 @@ function errorMessage(err) {
 
 /* Function to evit repeat the same code */
 function displayModal() {
+    document.querySelector('body').style.cursor = "default";
     footerMessage.innerHTML = `<button type="button" class="btn" data-dismiss="modal">Close</button>`;
     $("#send-message").modal();
 }
